@@ -13,10 +13,10 @@ This uses a chromedriver to scrape images.
 Please make sure the driver in the package is the same version as the current chrome browser you are using! 
 Link is below
 
-https://www.python.org/downloads/
-https://selenium-python.readthedocs.io/
-https://sites.google.com/a/chromium.org/chromedriver/downloads
-https://support.google.com/accounts/answer/6010255?hl=en
+https://www.python.org/downloads/  
+https://selenium-python.readthedocs.io/  
+https://sites.google.com/a/chromium.org/chromedriver/downloads  
+https://support.google.com/accounts/answer/6010255?hl=en  
 ```bash
 pip install selenium
 ```
