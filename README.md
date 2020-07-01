@@ -25,9 +25,6 @@ pip install selenium
 
 Clone or download from here. Done
 
-```bash
-pip install foobar
-```
 
 ## Usage
 
