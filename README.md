@@ -4,15 +4,15 @@ This is a one day project to create a script that emails a selected friend with 
 
 ## Prerequisites
 1. Python (current version 3.8.1)
-2. Selenium for webscraping 
+2. Selenium for web scraping 
 3. Python BeautifulSoup
 4. Python Requests
-5. Google chrome (current version 83.0.4103.116) 
+5. Google Chrome (current version 83.0.4103.116) 
 6. Gmail account with **less secure apps** turned off (highly suggest making a test account for this)
 
 **Important** 
-This uses a chromedriver to scrape images. 
-Please make sure the driver in the package is the same version as the current chrome browser you are using! 
+This uses a Chrome driver to scrape images. 
+Please make sure the driver in the package is the same version as the current Chrome browser you are using! 
 Link =>https://sites.google.com/a/chromium.org/chromedriver/downloads
 
 https://www.python.org/downloads/  
@@ -34,6 +34,10 @@ pip install requests
     Chrome version can be found under settings => about
     Move that to the downloaded folder
 3. Mac users will get an alert about the driver cannot be authenticated. Go to settings => security => general => press the button at the bottom
+
+If you get ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] this is a weird mac thing. 
+Go to Macintosh HD => Applications => Python3.8 folder double click on Install Certificates.command
+
 
 
 ## Usage
