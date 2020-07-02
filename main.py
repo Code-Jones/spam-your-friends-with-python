@@ -1,5 +1,6 @@
 from img_mail_time import send_img_email
 from url_scraper import get_urls
+from joke_scraper import get_jokes
 from selenium import webdriver
 from pathlib import Path
 import sys
@@ -7,12 +8,12 @@ import platform
 
 # Fill with your own information 
 
-Sender_Email = None 
+Sender_Email = None
 Sender_Pass = None
 Target_Email = None
 Img_Subject = None
-Joke_File = None
-Img_File = None
+Joke_File = "jokelist.txt"
+Img_File = "img_urls.txt"
 Num_Emails = None
 
 if Sender_Email == None:
@@ -29,14 +30,14 @@ if Num_Emails == None:
 
 base_path = Path(__file__).parent
 if platform.system() == "Windows":
-	Driver_Path = (base_path / "./drivers/chromedriver.exe").resolve()
+	Driver_Path = (base_path / "./chromedriver.exe").resolve()
 elif platform.system() == "Darwin":
-    Driver_Path = (base_path / "./drivers/chromedriver").resolve()
+    Driver_Path = (base_path / "./chromedriver").resolve()
 else:
 	print("Not supported")
 wd = webdriver.Chrome(executable_path = Driver_Path)
 
-
+get_jokes()
 get_urls(Img_File, Img_Subject, Num_Emails, wd)
 wd.quit()
 send_img_email(Num_Emails, Sender_Email, Sender_Pass, Target_Email, Img_Subject, Joke_File, Img_File)
