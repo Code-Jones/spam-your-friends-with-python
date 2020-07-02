@@ -10,7 +10,6 @@ ol = soup.ol
 for li in ol.findAll('li'):
     x = str(li)
     list.append(str(x[4:-5]))
-print(list)
 file = open("jokelist.txt", "w")
 for i in list:
     file.write(i + "\n")
