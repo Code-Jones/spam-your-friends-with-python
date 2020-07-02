@@ -13,7 +13,7 @@ This is a one day project to create a script that emails a selected friend with 
 **Important** 
 This uses a chromedriver to scrape images. 
 Please make sure the driver in the package is the same version as the current chrome browser you are using! 
-Link => https://sites.google.com/a/chromium.org/chromedriver/downloads
+Link =>https://sites.google.com/a/chromium.org/chromedriver/downloads
 
 https://www.python.org/downloads/  
 https://selenium-python.readthedocs.io/  
@@ -34,7 +34,6 @@ pip install requests
     Chrome version can be found under settings => about
     Move that to the downloaded folder
 3. Mac users will get an alert about the driver cannot be authenticated. Go to settings => security => general => press the button at the bottom
-4. 
 
 
 ## Usage
